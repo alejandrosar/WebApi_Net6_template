@@ -1,7 +1,7 @@
 ﻿using Entities.TestEntity;
 using EntitiesDTOs.TestEntityDTOs;
 
-namespace DataAccess.TestEntityRepository
+namespace DataAccess.Repositories.TestEntityRepository
 {
     public interface ITestEntityRepository
     {

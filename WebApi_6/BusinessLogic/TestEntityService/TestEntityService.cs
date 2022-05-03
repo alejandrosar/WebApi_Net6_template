@@ -1,4 +1,4 @@
-﻿using DataAccess.TestEntityRepository;
+﻿using DataAccess.Repositories.TestEntityRepository;
 using Entities.TestEntity;
 using EntitiesDTOs.TestEntityDTOs;
 

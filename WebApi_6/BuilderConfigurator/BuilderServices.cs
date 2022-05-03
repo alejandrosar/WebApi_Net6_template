@@ -16,7 +16,7 @@ namespace BuilderConfigurator
             services.AddSwaggerGen();
 
             services.AddDbContext<MariaDB_Context>();
-            services.AddScoped<ITestEntityService, TestEntityService>();
+            
 
             RepositoryServicesInjection.Inject(services);
             

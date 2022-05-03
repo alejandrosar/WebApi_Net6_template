@@ -1,7 +1,7 @@
 ﻿using Entities.TestEntity;
 using EntitiesDTOs.TestEntityDTOs;
 
-namespace DataAccess.TestEntityRepository.TestEntityDbReposity
+namespace DataAccess.Repositories.TestEntityRepository.TestEntityDbReposity
 {
     public interface ITestEntityMariaDBRepository
     {

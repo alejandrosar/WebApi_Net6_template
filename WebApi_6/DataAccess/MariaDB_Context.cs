@@ -1,4 +1,6 @@
-﻿using Entities.TestEntity;
+﻿using DataAccess.FluentApi;
+using Entities.LongFile;
+using Entities.TestEntity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -20,15 +22,13 @@ namespace DataAccess
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
-            //Configure keys and relationships
-
-            modelBuilder.Entity<TestEntity>()
-                    .HasKey(e => e.Id);
-            
+            TestEntityModelBuilder.TestEntityFluentApi(modelBuilder);
+            LongFileModelBuilder.LongFileFluentApi(modelBuilder);
         }
 
+        
 
         public DbSet<TestEntity> TestEntities { get; set; }
+        public DbSet<LongFile> LongFile { get; set; }
     }
 }

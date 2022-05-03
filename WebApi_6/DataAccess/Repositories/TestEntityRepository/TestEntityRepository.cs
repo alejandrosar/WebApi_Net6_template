@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using DataAccess.TestEntityRepository.TestEntityDbReposity;
+using DataAccess.Repositories.TestEntityRepository.TestEntityDbReposity;
 using Entities.TestEntity;
 using EntitiesDTOs.TestEntityDTOs;
 
-namespace DataAccess.TestEntityRepository
+namespace DataAccess.Repositories.TestEntityRepository
 {
     public class TestEntityRepository : ITestEntityRepository
     {
